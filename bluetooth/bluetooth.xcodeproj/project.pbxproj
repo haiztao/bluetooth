@@ -14,6 +14,7 @@
 		7AAC09351F9F28740040205A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AAC09331F9F28740040205A /* LaunchScreen.storyboard */; };
 		7AAC09401F9F28740040205A /* bluetoothTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC093F1F9F28740040205A /* bluetoothTests.swift */; };
 		7AAC094B1F9F28740040205A /* bluetoothUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC094A1F9F28740040205A /* bluetoothUITests.swift */; };
+		7AAC09591F9F2A130040205A /* BLEManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC09581F9F2A130040205A /* BLEManage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		7AAC09461F9F28740040205A /* bluetoothUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bluetoothUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AAC094A1F9F28740040205A /* bluetoothUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bluetoothUITests.swift; sourceTree = "<group>"; };
 		7AAC094C1F9F28740040205A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AAC09581F9F2A130040205A /* BLEManage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEManage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				7AAC092A1F9F28740040205A /* AppDelegate.swift */,
 				7AAC092C1F9F28740040205A /* ViewController.swift */,
+				7AAC09581F9F2A130040205A /* BLEManage.swift */,
 				7AAC092E1F9F28740040205A /* Main.storyboard */,
 				7AAC09311F9F28740040205A /* Assets.xcassets */,
 				7AAC09331F9F28740040205A /* LaunchScreen.storyboard */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AAC09591F9F2A130040205A /* BLEManage.swift in Sources */,
 				7AAC092D1F9F28740040205A /* ViewController.swift in Sources */,
 				7AAC092B1F9F28740040205A /* AppDelegate.swift in Sources */,
 			);
@@ -427,6 +431,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UHQU3SGL48;
 				INFOPLIST_FILE = bluetooth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.xlink.bluetooth;
@@ -441,6 +446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UHQU3SGL48;
 				INFOPLIST_FILE = bluetooth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.xlink.bluetooth;
