@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  健康卫士
+//  bluetooth
 //
-//  Created by haitao on 16/7/21.
-//  Copyright © 2016年 haitao. All rights reserved.
+//  Created by haitao on 2017/10/24.
+//  Copyright © 2017年 haitao. All rights reserved.
 //
 
 import UIKit

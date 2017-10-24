@@ -1,14 +1,14 @@
 //
-//  ____UITests.swift
-//  健康卫士UITests
+//  bluetoothUITests.swift
+//  bluetoothUITests
 //
-//  Created by haitao on 16/7/21.
-//  Copyright © 2016年 haitao. All rights reserved.
+//  Created by haitao on 2017/10/24.
+//  Copyright © 2017年 haitao. All rights reserved.
 //
 
 import XCTest
 
-class ____UITests: XCTestCase {
+class bluetoothUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

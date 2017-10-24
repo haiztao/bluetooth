@@ -1,15 +1,15 @@
 //
-//  ____Tests.swift
-//  健康卫士Tests
+//  bluetoothTests.swift
+//  bluetoothTests
 //
-//  Created by haitao on 16/7/21.
-//  Copyright © 2016年 haitao. All rights reserved.
+//  Created by haitao on 2017/10/24.
+//  Copyright © 2017年 haitao. All rights reserved.
 //
 
 import XCTest
-@testable import ____
+@testable import bluetooth
 
-class ____Tests: XCTestCase {
+class bluetoothTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -28,7 +28,7 @@ class ____Tests: XCTestCase {
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock {
+        self.measure {
             // Put the code you want to measure the time of here.
         }
     }
