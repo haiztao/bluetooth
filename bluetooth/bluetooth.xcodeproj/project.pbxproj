@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A8994DC1FF0E92A00F376BE /* BLEUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8994DB1FF0E92A00F376BE /* BLEUtility.m */; };
+		7A8994DF1FF0E96200F376BE /* DeviceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8994DD1FF0E96100F376BE /* DeviceModel.m */; };
 		7AAC092B1F9F28740040205A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC092A1F9F28740040205A /* AppDelegate.swift */; };
 		7AAC092D1F9F28740040205A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC092C1F9F28740040205A /* ViewController.swift */; };
 		7AAC09301F9F28740040205A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AAC092E1F9F28740040205A /* Main.storyboard */; };
@@ -35,6 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A8994D91FF0E92900F376BE /* bluetooth-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bluetooth-Bridging-Header.h"; sourceTree = "<group>"; };
+		7A8994DA1FF0E92A00F376BE /* BLEUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEUtility.h; sourceTree = "<group>"; };
+		7A8994DB1FF0E92A00F376BE /* BLEUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEUtility.m; sourceTree = "<group>"; };
+		7A8994DD1FF0E96100F376BE /* DeviceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceModel.m; sourceTree = "<group>"; };
+		7A8994DE1FF0E96100F376BE /* DeviceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceModel.h; sourceTree = "<group>"; };
 		7AAC09271F9F28740040205A /* bluetooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bluetooth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AAC092A1F9F28740040205A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AAC092C1F9F28740040205A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,10 +109,15 @@
 				7AAC092A1F9F28740040205A /* AppDelegate.swift */,
 				7AAC092C1F9F28740040205A /* ViewController.swift */,
 				7AAC09581F9F2A130040205A /* BLEManage.swift */,
+				7A8994DA1FF0E92A00F376BE /* BLEUtility.h */,
+				7A8994DB1FF0E92A00F376BE /* BLEUtility.m */,
+				7A8994DE1FF0E96100F376BE /* DeviceModel.h */,
+				7A8994DD1FF0E96100F376BE /* DeviceModel.m */,
 				7AAC092E1F9F28740040205A /* Main.storyboard */,
 				7AAC09311F9F28740040205A /* Assets.xcassets */,
 				7AAC09331F9F28740040205A /* LaunchScreen.storyboard */,
 				7AAC09361F9F28740040205A /* Info.plist */,
+				7A8994D91FF0E92900F376BE /* bluetooth-Bridging-Header.h */,
 			);
 			path = bluetooth;
 			sourceTree = "<group>";
@@ -196,6 +208,7 @@
 				TargetAttributes = {
 					7AAC09261F9F28740040205A = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					7AAC093A1F9F28740040205A = {
@@ -264,7 +277,9 @@
 			files = (
 				7AAC09591F9F2A130040205A /* BLEManage.swift in Sources */,
 				7AAC092D1F9F28740040205A /* ViewController.swift in Sources */,
+				7A8994DC1FF0E92A00F376BE /* BLEUtility.m in Sources */,
 				7AAC092B1F9F28740040205A /* AppDelegate.swift in Sources */,
+				7A8994DF1FF0E96200F376BE /* DeviceModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,12 +445,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UHQU3SGL48;
 				INFOPLIST_FILE = bluetooth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.xlink.bluetooth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "bluetooth/bluetooth-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -445,12 +463,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UHQU3SGL48;
 				INFOPLIST_FILE = bluetooth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.xlink.bluetooth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "bluetooth/bluetooth-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
